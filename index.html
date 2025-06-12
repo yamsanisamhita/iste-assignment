@@ -1,255 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mental Health Matters - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samhita</title>
+  <link rel="stylesheet" href="1.css" />
 </head>
 <body>
-    <header>
-        <h1>Uplift Meadow</h1>
-        <h2 class="tagline">The Recourse To Pacify The Mind ...</h2>
-        <div class="icon-container">
-          <a href="login.html" class="button">Login/Signup</a>
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAPFBMVEXk5ueutLepsLPo6uursbXJzc/p6+zj5ea2u76orrKvtbi0ubzZ3N3O0dPAxcfg4uPMz9HU19i8wcPDx8qKXtGiAAAFTElEQVR4nO2d3XqzIAyAhUD916L3f6+f1m7tVvtNINFg8x5tZ32fQAIoMcsEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQTghAJD1jWtnXJPP/54IgNzZQulSmxvTH6oYXX4WS+ivhTbqBa1r26cvCdCu6i0YXbdZ0o4A1rzV+5IcE3YE+z58T45lqo7g1Aa/JY5tgoqQF3qb382x7lNzBLcxft+O17QUYfQI4IIeklKsPSN4i6LKj/7Zm8n99RbHJpEw9gEBXNBpKIYLJqKYRwjOikf//r+J8ZsVuacbqCMNleI9TqGLGqMzhnVdBOdd6F/RlrFijiCoVMk320CBIahUxTWI0KKEcJqKbMdpdJb5QvdHq6wCI5qhKlgGMS/RBHkubWDAE+QZxB4xhCyDiDkLZxgGEVdQldzSKbTIhmZkFkSEPcVvmBn2SMuZB9od7fQDsMiDdKJjFUSCQarM5WirZ3C2TT/htYnyPcPfgrFHWz0BI74gr6J/IZiGUxAZGQLqmvQLTrtE/Go4YxhVRIpEw+sww1IIcqr5NKmUUzLF3d4/qPkYIp2T/obPuemlojFUR4t9Q2Vojhb7BmgElWHzLPH8hucfpefPNFTVgs9h1AdU/Pin96vwWbWdf+X9Absn3OdO34aMdsDnP8WgKYisTqI6CkNGqZQo1XA6Ef6AU32SJzOcBukHPF07/xNSgmHKa5BOhtezv6mA/rYJpwXNAnbRZ1XuF3BzDcO3vpA3+ny2909gbqE4hhD3LIPhLLyBNhPZvbZ3B+3tPYa18A7auSlXQayKwTPNLKDcuOB0xPYKDPFTkWsevQPRZ1J8Hji9I1KQ34r7hZhrwNwOZ97QxNx0drwn4QI0wQk1DcEsfKCWKdxVvxPSNUIp/knmAXT+nT+Ko3+0H96rcNb3m1fx7MBTJdeBJ7uFcWsc0wvgAsC4pROW0l2inbAmIBv/7GZmuhQH6API2rr8T0e6yuZJ+80A9LZeG62T3tik31XwxtwZcizKuTHkMjB1WdZde4Kmic/A5ZI3rr1ae21d08PlVHYfAaxw9G9CYRbJ+8ZdbTcMRV1XM3VdF0M32vtoTdZ0+u29s0OttJ5bz64UwinjaFMVY9vkqc3KKSxN21Xl+0L4Q3Vuv1tYl0pqnX6ms4XetFz7gdZVAgUEoJntfOUe4ZwsHd9FzqQ3Vv6xe41l0XJcqcKl6TZvlv7ClAW3BsqQW4X7ypApB8dmTgK4IX5wvqIVj33HtD2qSG4BqznxdIefL27Y4sahi0MdIdvUsDva8agGGbCtITmCY31MHD2O0uIdh/0rJDQ1VX5Zdxz3rR2QDbv6qXl9vudzqQtGm1Jv9LDXOsfvvB7VcZ8PDKD0mQ1VHPYQ9O+Yj4hR1IUD8rBnn3ho2m8oQMxbCFiKlL2ioSW5heeJqegED52CzxCtcGD3Kv8Wms9EYLyUhwaFIhSMBClevWEmiK/Iaogu4H7sg6ppQhQG8RUqivuTGOAJOg6FfgW0q0M0PQMRMEgXaeNf3SYDZ8PIMI0+wHgr/MgN7wYwpiLjCCqM6ydUDZLQiB6nDdNC8SDyig3jPPpFXGcC9O8BUBDVmgBY59E7Md/35Loe/UVEECEJwYggJjELZ4J71SaQSBeC02n4Da29CayJNA28SAhd2CQyC1Xw6pSmGSINQVuMhAZp4DClan9MgmkDDNmezqwS8sgtlXK/EPBhoaSmYVC/F7IO1jQEdHOlabpKh3+jzLQSTUiq4X2I+Ip/zU8rlaqAvkS21ElR+gqu3zbjjL+hIAiCIAiCIAiCIAiCsCf/AKrfVhSbvA+DAAAAAElFTkSuQmCC" alt="Icon" class="icon">
-        </div>
-    </header>
+  <header>
     <nav>
-        <a href="#">Home</a>
-        <a href="./game.html">Stress Relief Games</a>
-        <a href="online-communities.html">Online Communities</a>
-        <a href="./citys.html">Offline Sessions</a>
-        <a href="./challenge.html">Challenges</a>
+      <h1>Yamsani Samhita</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <div class="image">
-        <h1 class="imagetext">~Elevate your spirits,every day</h1>
-       <a href="#mainpage"> <button>Explore</button></a>
+  <section id="hero">
+    <h2>Hello, I'm Yamsani Samhita</h2>
+    <p>Aspiring Software Developer | ML Enthusiast | Tech Enthusiast</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>
+      I’m a tech enthusiast driven by a deep curiosity and passion for problem-solving through technology. My interests span across Data Structures and Algorithms (DSA), where I enjoy tackling complex coding challenges to strengthen my logical thinking and efficiency. I'm also deeply engaged in the field of Artificial Intelligence and Machine Learning, exploring how machines can learn from data to make smart decisions. Alongside this, I’m developing my skills in Full Stack Web Development, allowing me to build end-to-end applications that are both user-friendly and scalable. I strive to apply my knowledge to create impactful solutions that address real-world challenges through code and innovation.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="project">
+      <h4>Travel Blog App</h4>
+      <p>A blog platform for authors, users, and admins. Tech used: React, MongoDB.</p>
+      <a href="https://github.com/yamsanisamhita/TravelBlog" target="_blank">LINK</a>
     </div>
-    
-    <main>
-      <a name="mainpage">
-      <center>
-        <div class="parent1">
-            <section>
-                <h2>Stress Relief Games</h2>
-                <p>Play our stress relief games to help you relax and unwind.</p>
-                <a href="./game.html"><button><centre>Play now</centre></button></a>
-                </section>
-            <section>
-                <h2>Online Communities</h2>
-                <p>Join our online communities to share your story and connect with others who understand what you're going through.</p>
-                <a href="login.html"><button>Connect now</button></a>
-            </section>
-            </div>
-          </center>
-          <center>
-            <div class="parent2">
-            <section>
-                <h2>Offline Sessions</h2>
-                <p>Join our offline group interactive sessions to connect with others in person.</p>
-                <a href="./citys.html"><button>Register now</button></a>
-            </section>
-            
-            <section>
-                <h2>Challenges</h2>
-                <p>Take our challenges to help you overcome stress and depression.</p>
-                <a href="./challenge.html"><button>See Challenges</button></a>
-            </section>
-            </div>
-          </center>
-        </a><br>
-        <h1 style="text-align: center;">Success stories</h1><br><br>
-            <div class="parent3">
-            <div class="card">
-              <div class="content">
-                <div class="back">
-                  <div class="back-content">
-                    
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fD8K3vn_KC4vBp8VBb1tWYomAQEDsF_MFw&s" alt="" height="100" width="100">
+    <div class="project">
+      <h4>Wide range of website designs</h4>
+      <p>I have developed a wide range of website designs using HTML,CSS and JavaScript in CodePen</p>
+      <a href="https://codepen.io/Samhita-Yamsani" target="_blank">LINK</a>
+    </div>
+    <!-- Add more projects similarly -->
+  </section>
 
-                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-            
-                    <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-            
-                    <g id="SVGRepo_iconCarrier">
-            
-                    <path d="M20.84375 0.03125C20.191406 0.0703125 19.652344 0.425781 19.21875 1.53125C18.988281 2.117188 18.5 3.558594 18.03125 4.9375C17.792969 5.636719 17.570313 6.273438 17.40625 6.75C17.390625 6.796875 17.414063 6.855469 17.40625 6.90625C17.398438 6.925781 17.351563 6.949219 17.34375 6.96875L17.25 7.25C18.566406 7.65625 19.539063 8.058594 19.625 8.09375C22.597656 9.21875 28.351563 11.847656 33.28125 16.78125C38.5 22 41.183594 28.265625 42.09375 30.71875C42.113281 30.761719 42.375 31.535156 42.75 32.84375C42.757813 32.839844 42.777344 32.847656 42.78125 32.84375C43.34375 32.664063 44.953125 32.09375 46.3125 31.625C47.109375 31.351563 47.808594 31.117188 48.15625 31C49.003906 30.714844 49.542969 30.292969 49.8125 29.6875C50.074219 29.109375 50.066406 28.429688 49.75 27.6875C49.605469 27.347656 49.441406 26.917969 49.25 26.4375C47.878906 23.007813 45.007813 15.882813 39.59375 10.46875C33.613281 4.484375 25.792969 1.210938 22.125 0.21875C21.648438 0.0898438 21.234375 0.0078125 20.84375 0.03125 Z M 16.46875 9.09375L0.0625 48.625C-0.09375 48.996094 -0.00390625 49.433594 0.28125 49.71875C0.472656 49.910156 0.738281 50 1 50C1.128906 50 1.253906 49.988281 1.375 49.9375L40.90625 33.59375C40.523438 32.242188 40.222656 31.449219 40.21875 31.4375C39.351563 29.089844 36.816406 23.128906 31.875 18.1875C27.035156 13.34375 21.167969 10.804688 18.875 9.9375C18.84375 9.925781 17.8125 9.5 16.46875 9.09375 Z M 17 16C19.761719 16 22 18.238281 22 21C22 23.761719 19.761719 26 17 26C15.140625 26 13.550781 24.972656 12.6875 23.46875L15.6875 16.1875C16.101563 16.074219 16.550781 16 17 16 Z M 31 22C32.65625 22 34 23.34375 34 25C34 25.917969 33.585938 26.730469 32.9375 27.28125L32.90625 27.28125C33.570313 27.996094 34 28.949219 34 30C34 32.210938 32.210938 34 30 34C27.789063 34 26 32.210938 26 30C26 28.359375 26.996094 26.960938 28.40625 26.34375L28.3125 26.3125C28.117188 25.917969 28 25.472656 28 25C28 23.34375 29.34375 22 31 22 Z M 21 32C23.210938 32 25 33.789063 25 36C25 36.855469 24.710938 37.660156 24.25 38.3125L20.3125 39.9375C18.429688 39.609375 17 37.976563 17 36C17 33.789063 18.789063 32 21 32 Z M 9 34C10.65625 34 12 35.34375 12 37C12 38.65625 10.65625 40 9 40C7.902344 40 6.960938 39.414063 6.4375 38.53125L8.25 34.09375C8.488281 34.03125 8.742188 34 9 34Z"></path>
-                    </g>
-            
-                    </svg>
-                    <strong>Hamsini</strong>
-                  </div>
-                </div>
-                <div class="front">
-                  
-                  <div class="img">
-                    <div class="circle">
-                    </div>
-                    <div class="circle" id="right">
-                    </div>
-                    <div class="circle" id="bottom">
-                    </div>
-                  </div>
-            
-                  <div class="front-content">
-                    <small class="badge">1 Months ago</small>
-                    <div class="description">
-                      <div class="title">
-                        <p class="title">
-                          <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</strong>
-                        </p>
-                        <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
-                      </div>
-                      <p class="card-footer">
-                        30 Mins &nbsp; | &nbsp; 1 Serving
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                <div class="back">
-                  <div class="back-content">
-                    
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fD8K3vn_KC4vBp8VBb1tWYomAQEDsF_MFw&s" alt="" height="100" width="100">
+  <section id="Experience">
+    <h3>Experience</h3>
+    <div class="project">
+      <h4>Summer of AI Internship Remote</h4>
+      <p>By Swecha in IIIT Hyderabad May 2025 - Aug 2025<br>
+◦ Contribution to Telugu LLM: Text-to-speech (TTS) model<br>
+◦ Technologies Learnt: Generative AI,Personilised chatbot,React JS,Python</p>
+    </div>
+    <!-- Add more projects similarly -->
+  </section>
 
-                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-            
-                    <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-            
-                    <g id="SVGRepo_iconCarrier">
-            
-                    <path d="M20.84375 0.03125C20.191406 0.0703125 19.652344 0.425781 19.21875 1.53125C18.988281 2.117188 18.5 3.558594 18.03125 4.9375C17.792969 5.636719 17.570313 6.273438 17.40625 6.75C17.390625 6.796875 17.414063 6.855469 17.40625 6.90625C17.398438 6.925781 17.351563 6.949219 17.34375 6.96875L17.25 7.25C18.566406 7.65625 19.539063 8.058594 19.625 8.09375C22.597656 9.21875 28.351563 11.847656 33.28125 16.78125C38.5 22 41.183594 28.265625 42.09375 30.71875C42.113281 30.761719 42.375 31.535156 42.75 32.84375C42.757813 32.839844 42.777344 32.847656 42.78125 32.84375C43.34375 32.664063 44.953125 32.09375 46.3125 31.625C47.109375 31.351563 47.808594 31.117188 48.15625 31C49.003906 30.714844 49.542969 30.292969 49.8125 29.6875C50.074219 29.109375 50.066406 28.429688 49.75 27.6875C49.605469 27.347656 49.441406 26.917969 49.25 26.4375C47.878906 23.007813 45.007813 15.882813 39.59375 10.46875C33.613281 4.484375 25.792969 1.210938 22.125 0.21875C21.648438 0.0898438 21.234375 0.0078125 20.84375 0.03125 Z M 16.46875 9.09375L0.0625 48.625C-0.09375 48.996094 -0.00390625 49.433594 0.28125 49.71875C0.472656 49.910156 0.738281 50 1 50C1.128906 50 1.253906 49.988281 1.375 49.9375L40.90625 33.59375C40.523438 32.242188 40.222656 31.449219 40.21875 31.4375C39.351563 29.089844 36.816406 23.128906 31.875 18.1875C27.035156 13.34375 21.167969 10.804688 18.875 9.9375C18.84375 9.925781 17.8125 9.5 16.46875 9.09375 Z M 17 16C19.761719 16 22 18.238281 22 21C22 23.761719 19.761719 26 17 26C15.140625 26 13.550781 24.972656 12.6875 23.46875L15.6875 16.1875C16.101563 16.074219 16.550781 16 17 16 Z M 31 22C32.65625 22 34 23.34375 34 25C34 25.917969 33.585938 26.730469 32.9375 27.28125L32.90625 27.28125C33.570313 27.996094 34 28.949219 34 30C34 32.210938 32.210938 34 30 34C27.789063 34 26 32.210938 26 30C26 28.359375 26.996094 26.960938 28.40625 26.34375L28.3125 26.3125C28.117188 25.917969 28 25.472656 28 25C28 23.34375 29.34375 22 31 22 Z M 21 32C23.210938 32 25 33.789063 25 36C25 36.855469 24.710938 37.660156 24.25 38.3125L20.3125 39.9375C18.429688 39.609375 17 37.976563 17 36C17 33.789063 18.789063 32 21 32 Z M 9 34C10.65625 34 12 35.34375 12 37C12 38.65625 10.65625 40 9 40C7.902344 40 6.960938 39.414063 6.4375 38.53125L8.25 34.09375C8.488281 34.03125 8.742188 34 9 34Z"></path>
-            
-                    </g>
-            
-                    </svg>
-                    <strong>Suhitha</strong>
-                  </div>
-                </div>
-                <div class="front">
-                  
-                  <div class="img">
-                    <div class="circle">
-                    </div>
-                    <div class="circle" id="right">
-                    </div>
-                    <div class="circle" id="bottom">
-                    </div>
-                  </div>
-            
-                  <div class="front-content">
-                    <small class="badge">2 Months ago</small>
-                    <div class="description">
-                      <div class="title">
-                        <p class="title">
-                          <strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</strong>
-                        </p>
-                        <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
-                      </div>
-                      <p class="card-footer">
-                        30 Mins &nbsp; | &nbsp; 1 Serving
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                <div class="back">
-                  <div class="back-content">
-                    
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fD8K3vn_KC4vBp8VBb1tWYomAQEDsF_MFw&s" alt="" height="100" width="100">
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>Email: samhitayamsani@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/samhita-yamsani-325637295/" target="_blank">samhitayamsani</a></p>
+  </section>
 
-                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-            
-                    <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-            
-                    <g id="SVGRepo_iconCarrier">
-            
-                    <path d="M20.84375 0.03125C20.191406 0.0703125 19.652344 0.425781 19.21875 1.53125C18.988281 2.117188 18.5 3.558594 18.03125 4.9375C17.792969 5.636719 17.570313 6.273438 17.40625 6.75C17.390625 6.796875 17.414063 6.855469 17.40625 6.90625C17.398438 6.925781 17.351563 6.949219 17.34375 6.96875L17.25 7.25C18.566406 7.65625 19.539063 8.058594 19.625 8.09375C22.597656 9.21875 28.351563 11.847656 33.28125 16.78125C38.5 22 41.183594 28.265625 42.09375 30.71875C42.113281 30.761719 42.375 31.535156 42.75 32.84375C42.757813 32.839844 42.777344 32.847656 42.78125 32.84375C43.34375 32.664063 44.953125 32.09375 46.3125 31.625C47.109375 31.351563 47.808594 31.117188 48.15625 31C49.003906 30.714844 49.542969 30.292969 49.8125 29.6875C50.074219 29.109375 50.066406 28.429688 49.75 27.6875C49.605469 27.347656 49.441406 26.917969 49.25 26.4375C47.878906 23.007813 45.007813 15.882813 39.59375 10.46875C33.613281 4.484375 25.792969 1.210938 22.125 0.21875C21.648438 0.0898438 21.234375 0.0078125 20.84375 0.03125 Z M 16.46875 9.09375L0.0625 48.625C-0.09375 48.996094 -0.00390625 49.433594 0.28125 49.71875C0.472656 49.910156 0.738281 50 1 50C1.128906 50 1.253906 49.988281 1.375 49.9375L40.90625 33.59375C40.523438 32.242188 40.222656 31.449219 40.21875 31.4375C39.351563 29.089844 36.816406 23.128906 31.875 18.1875C27.035156 13.34375 21.167969 10.804688 18.875 9.9375C18.84375 9.925781 17.8125 9.5 16.46875 9.09375 Z M 17 16C19.761719 16 22 18.238281 22 21C22 23.761719 19.761719 26 17 26C15.140625 26 13.550781 24.972656 12.6875 23.46875L15.6875 16.1875C16.101563 16.074219 16.550781 16 17 16 Z M 31 22C32.65625 22 34 23.34375 34 25C34 25.917969 33.585938 26.730469 32.9375 27.28125L32.90625 27.28125C33.570313 27.996094 34 28.949219 34 30C34 32.210938 32.210938 34 30 34C27.789063 34 26 32.210938 26 30C26 28.359375 26.996094 26.960938 28.40625 26.34375L28.3125 26.3125C28.117188 25.917969 28 25.472656 28 25C28 23.34375 29.34375 22 31 22 Z M 21 32C23.210938 32 25 33.789063 25 36C25 36.855469 24.710938 37.660156 24.25 38.3125L20.3125 39.9375C18.429688 39.609375 17 37.976563 17 36C17 33.789063 18.789063 32 21 32 Z M 9 34C10.65625 34 12 35.34375 12 37C12 38.65625 10.65625 40 9 40C7.902344 40 6.960938 39.414063 6.4375 38.53125L8.25 34.09375C8.488281 34.03125 8.742188 34 9 34Z"></path>
-                    </g>
-            
-                    </svg>
-                    <strong>Samhita</strong>
-                  </div>
-                </div>
-                <div class="front">
-                  
-                  <div class="img">
-                    <div class="circle">
-                    </div>
-                    <div class="circle" id="right">
-                    </div>
-                    <div class="circle" id="bottom">
-                    </div>
-                  </div>
-            
-                  <div class="front-content">
-                    <small class="badge">3 Months ago</small>
-                    <div class="description">
-                      <div class="title">
-                        <p class="title">
-                          <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
-                        </p>
-                        <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
-                      </div>
-                      <p class="card-footer">
-                        30 Mins &nbsp; | &nbsp; 1 Serving
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
-    </main>
-    <center>
-    <a href="./volunteer.html"><button class="volunt">Become a volunteer</button></a>
-    </center>
-    <br>
-     <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <h4>Follow Us</h4>
-              <ul>
-                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> </a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> </a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> </a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <h4>About Us</h4>
-              <p>We are a team of mental health professionals dedicated to helping individuals overcome depression and anxiety.</p>
-              <a href="#about">Learn More</a>
-            </div>
-            <div class="col-md-3">
-              <h4>Contact Us</h4>
-              <p>Get in touch with us to learn more about our services or to schedule a consultation.</p>
-              <a href="#contact">Contact Form</a>
-            </div>
-            <div class="col-md-3">
-              <h4>Address</h4>
-              <p>123 Main St, Anytown, USA 12345</p>
-              <h4>Email</h4>
-              <p><a href="mailto:info@mentalhealthmatters.com">info@mentalhealthmatters.com</a></p>
-              <h4>Phone</h4>
-              <p>(123) 456-7890</p>
-            </div>
-          </div>
-        </div>
-        <div class="copyright">
-          <p>&copy; 2024 Mental Health Matters. All rights reserved.</p>
-        </div>
-      </footer>
+  <footer>
+    <p>&copy; 2025 Yamsani Samhita</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+</html>
 
-   
